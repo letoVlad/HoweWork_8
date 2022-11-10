@@ -1,5 +1,6 @@
 public class Main {
     static int[] arr = generateRandomArray();
+
     public static int[] generateRandomArray() {
         java.util.Random random = new java.util.Random();
         int[] arr = new int[30];
@@ -36,6 +37,12 @@ public class Main {
         System.out.println("Максимальная сумма трат за день составила " + maxDaySpending + " рублей");
         System.out.println("Минимальная сумма трат за день составила " + minDaySpending + " рублей");
         // Задание 3
+        double averageSpending = 0;
+        int month = 30;
+        for (int value : arr) {
+            averageSpending += value;
+        }
+        System.out.println(averageSpending / month);
         System.out.println(sumMonth / 30);
         // Задание 4
         char[] reverseFullName = {'n', 'a', 'v', 'I', ' ', 'v', 'o', 'n', 'a', 'v', 'I'};
